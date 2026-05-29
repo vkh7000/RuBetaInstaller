@@ -33,7 +33,7 @@ fi
 
 wget -q -O ./RuBetaLauncher.jar "https://rubeta.net/launcher/RuBetaLauncher.jar" 
 
-pkexec bash -c "cd \"$(pwd)\"; if [ -d /opt/rubeta/ ]; then rm -rf /opt/rubeta/; fi; mkdir /opt/rubeta/; cp ./RuBetaLauncher.jar /opt/rubeta/RuBetaLauncher.jar; chmod -R 777 /opt/rubeta; echo -e \"[Desktop Entry]\nComment=Minecraft Beta 1.7.3 Server\nIcon=minecraft\nExec=java -jar /opt/rubeta/RuBetaLauncher.jar\nName=RuBeta\nTerminal=false\nStartupNotify=false\nType=Application\nCategories=Games;\nKeywords=rubeta;minecraft;\" > /usr/share/applications/RuBeta.desktop"
+pkexec bash -c "cd \"$(pwd)\"; if [ -d /opt/rubeta/ ]; then rm -rf /opt/rubeta/; fi; mkdir /opt/rubeta/; cp ./RuBetaLauncher.jar /opt/rubeta/RuBetaLauncher.jar; chmod -R 777 /opt/rubeta; echo -e \"[Desktop Entry]\nComment=Minecraft Beta 1.7.3 Server\nIcon=minecraft\nExec=java -jar /opt/rubeta/RuBetaLauncher.jar\nName=RuBeta\nTerminal=false\nStartupNotify=false\nType=Application\nCategories=Game;ArcadeGame;\nKeywords=rubeta;minecraft;\" > /usr/share/applications/RuBeta.desktop"
 
 rm -f ./RuBetaLauncher.jar
 
